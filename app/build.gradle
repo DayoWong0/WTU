@@ -16,8 +16,8 @@ android {
         applicationId "grade.xyj.com"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 92
-        versionName "20.05.01-2"
+        versionCode 93
+        versionName "20.06.09"
     }
 
 
@@ -31,9 +31,9 @@ android {
 
         release {
             keyAlias 'music'
-            keyPassword 'xsm123'
+            keyPassword 'yourKeyPassword'
             storeFile file('D:/Androidtools/keys/xyj.jks')
-            storePassword 'xsm123..'
+            storePassword 'yourStorePassword'
         }
     }
     buildTypes {

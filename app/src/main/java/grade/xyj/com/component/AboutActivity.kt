@@ -76,12 +76,12 @@ class AboutActivity : BaseTitleActivity() {
                     }.lparams {
                         gravity = Gravity.CENTER
                     }
-                    textView("开源地址:https://github.com/"){
+                    textView("开源地址:https://github.com/HandsomeXi/WTU"){
                         textColorResource = R.color.blue
                         leftPadding = dip(20)
                         rightPadding = dip(20)
                         setOnClickListener {
-                            browse("")
+                            browse("https://github.com/HandsomeXi/WTU")
                         }
                     }.lparams{
                         gravity = Gravity.CENTER

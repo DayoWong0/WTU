@@ -48,7 +48,7 @@ class SchoolLoginClient(
             put("p1", passWord)
             put("p2", loginParam.pwdDefaultEncryptSalt)
         }.toString())
-        val url = "http://112.78.185.21:8082/wfh/aes?data=$data"
+        val url = "http://112.78.185.21:8080/wfh/aes?data=$data"
 
         val pwdEncrypt = Http.get(url)?.body?.string()?:return LoginStatus.WF_NET_ERROR
 
