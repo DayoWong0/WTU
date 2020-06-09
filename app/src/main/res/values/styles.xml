@@ -1,0 +1,168 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="materialButtonStyle">@style/DialogButtonStyle</item>
+        <item name="material_drawer_background">@color/light_text_color</item>
+    </style>
+
+    <style name="LauncherTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/layer_launcher</item>
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+
+    <style name="LoginTheme" parent="greenTheme">
+        <item name="colorPrimaryDark">@color/color_login</item>
+    </style>
+
+    <style name="NoLoginTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">#616161</item>
+        <item name="colorPrimary">#9E9E9E</item>
+        <item name="colorAccent">#9E9E9E</item>
+    </style>
+
+    <style name="RedTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_red</item>
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="colorAccent">@color/accent_red</item>
+    </style>
+
+    <style name="purpleTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_purple</item>
+        <item name="colorPrimary">@color/primary_purple</item>
+        <item name="colorAccent">@color/accent_purple</item>
+    </style>
+
+    <style name="purple_deTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_purple_de</item>
+        <item name="colorPrimary">@color/primary_purple_de</item>
+        <item name="colorAccent">@color/accent_purple_de</item>
+    </style>
+
+    <style name="pinkTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_pink</item>
+        <item name="colorPrimary">@color/primary_pink</item>
+        <item name="colorAccent">@color/accent_pink</item>
+    </style>
+
+    <style name="indigoTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_indigo</item>
+        <item name="colorPrimary">@color/primary_indigo</item>
+        <item name="colorAccent">@color/accent_indigo</item>
+    </style>
+
+    <style name="light_blueTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_light_blue</item>
+        <item name="colorPrimary">@color/primary_light_blue</item>
+        <item name="colorAccent">@color/accent_light_blue</item>
+    </style>
+
+    <style name="greenTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_green</item>
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorAccent">@color/accent_green</item>
+    </style>
+
+
+    <style name="limeTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_lime</item>
+        <item name="colorPrimary">@color/primary_lime</item>
+        <item name="colorAccent">@color/accent_lime</item>
+    </style>
+
+    <style name="blue_greyTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary_dark_blue_grey</item>
+        <item name="colorPrimary">@color/primary_blue_grey</item>
+        <item name="colorAccent">@color/accent_blue_grey</item>
+    </style>
+
+    <style name="animZoomIn" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/alpha</item>
+    </style>
+
+
+    <style name="CategoryStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/margin_16dp</item>
+        <item name="android:paddingTop">@dimen/margin_16dp</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+    </style>
+
+    <style name="animate_fade_in_dialog">
+        <item name="android:windowExitAnimation">@anim/alpha</item>
+
+    </style>
+
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+
+    <style name="ScheduleHeaderStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/nodeIndex</item>
+    </style>
+
+
+    <style name="TimeDataPicker">
+        <item name="android:layout_width">80dp</item>
+        <item name="wheel_curtain">true</item>
+        <item name="wheel_curved">false</item>
+        <item name="wheel_visible_item_count">5</item>
+        <item name="wheel_curtain_color">#64ff9393</item>
+        <item name="wheel_atmospheric">true</item>
+        <item name="wheel_item_text_color">@color/md_grey_300</item>
+        <item name="wheel_selected_item_text_color">@color/dark_text_color</item>
+        <item name="wheel_item_text_size">14sp</item>
+    </style>
+
+    <style name="DialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/md_blue_500</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="ButtonBackground">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="IconTextViewStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <style name="LoginEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:drawableBottom">@drawable/login_edittext_bottom</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textCursorDrawable">@drawable/login_edittext_cursor</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+</resources>

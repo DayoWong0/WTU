@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="grade.xyj.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_388"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_388"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".component.main.MainActivity"
+            android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".widget.TodayWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/today_widget_info" />
+        </receiver>
+        <receiver android:name=".widget.WeekWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/week_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".component.WebActivity" />
+        <activity android:name=".component.groupmg.ScheduleManageActivity" />
+        <activity android:name=".component.login.LoginActivity" />
+        <activity android:name=".component.qbank.WorkActivity" />
+        <activity android:name="grade.xyj.com.component.course.setting.ScheduleSettingsActivity" />
+        <activity android:name=".component.AboutActivity" />
+        <activity android:name=".component.setting.SettingActivity" />
+        <activity android:name=".component.addcourse.AddCourseActivity" />
+        <activity android:name=".component.login.LoginWebActivity"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="grade.xyj.com.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".widget.AllWeekWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <service
+            android:name=".widget.TodayWidgetServer"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <service
+            android:name=".update.UpdateService"
+            android:exported="false" />
+    </application>
+
+</manifest>

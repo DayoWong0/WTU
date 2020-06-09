@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/light_text_color"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="导入课表"
+        android:textColor="@color/dark_text_color"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            app:wheel_item_text_size="14sp"
+            android:id="@+id/wp_xn"
+            style="@style/TimeDataPicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            app:wheel_item_text_size="14sp"
+            android:id="@+id/wp_xq"
+            style="@style/TimeDataPicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:textSize="16sp"
+            android:id="@+id/btn_cancel"
+            style="@style/DialogButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <Button
+            android:textSize="16sp"
+            android:id="@+id/btn_sure"
+            style="@style/DialogButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="导入"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

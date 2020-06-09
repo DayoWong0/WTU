@@ -1,0 +1,4 @@
+package grade.xyj.com.classchedule.event
+
+object CourseSettingChangeEvent
+object CourseDataChangeEvent
